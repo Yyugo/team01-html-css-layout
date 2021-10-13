@@ -14,6 +14,7 @@
 	--font-quote: 'Noto Sans Mono', monospace;
 	--black-color: #000000;
 	--font-team: 'Saira', sans-serif;
+	--footer-color: rgba(255, 215, 0);
 }
 
 * {
@@ -39,6 +40,7 @@
 	padding: 32px 40px 10px 40px;
 	text-decoration: none;
 	font-size: 20px;
+	font-family: var(--font-team);
 }
 
 .top-nav a:hover {
@@ -66,6 +68,10 @@
 	color: var(--yellow-color);
 	font-family: var(--logotype-top);
 	font-size: 20px;
+}
+
+.img-team-rukh p {
+	line-height: 2;
 }
 
 /* About FC Rukh Lviv */
@@ -149,7 +155,7 @@
 	transition: 0.3s;
 }
 
-/* SLIDE WITH THELAST VICTORY */
+/* SLIDE WITH THE LAST VICTORY */
 
 .new-slide {
 	background-image:url(/img/photo-stadium.png);
@@ -211,13 +217,94 @@
 	padding-right: 20px ;
 }
 
-
-
-
-
 .score p {
 	color: var(--white-color);
 	font-family: var(--font-team);
 	font-size: 50px;
 	padding: 170px 210px 50px 0;
+}
+
+/* FOOTER */
+
+footer {
+	background-color:var(--footer-color);
+	height: auto;
+	width: 100%;
+	font-family: var(--font-team);
+	color: var(--black-color);
+	margin-top: -100px;
+}
+
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-content h4 {
+	font-size: 2.2rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+} 
+
+.footer-nav a {
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 50px;
+	padding: 40px;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: var(--font-team 400);
+	color: var(--black-color);
+}
+
+.socials {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+	margin: 0 30px;
+}
+
+.socials a {
+	text-decoration: none;
+	color: var(--black-color);
+	border: 1px solid var(--black-color);
+	border-radius: 20%;
+}
+
+.socials a i {
+	font-size: 1.1rem;
+	transition: color .4s easy;
+}
+
+.socials a:hover i {
+	color: red;
+}
+
+.footer-boottom {
+	background: #000;
+	width: 100%; 
+	padding: 20px 0;
+	text-align: center;
+	color:red;
+}
+
+.footer-boottom p {
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+
+.footer-boottom span {
+	text-transform: uppercase;
+	opacity: .9;
+	font-weight: 200;
 }
