@@ -22,43 +22,66 @@
 	padding: 0;
 }
 
-/* Navigation Meny  */
+/* Nav Menu and Top Logotype */
 
-.top-nav {
-	overflow: hidden; 
-	background-color: var(--origin-color);
+nav {
 	position: fixed;
-	top: 0px;
 	width: 100%;
 }
 
-.top-nav a {
-	float: left; 
-	display: block; 
-	color: var(--white-color);
-	text-align: center; 
-	padding: 32px 40px 10px 40px;
-	text-decoration: none;
-	font-size: 20px;
-	font-family: var(--font-team);
+nav ul {
+	list-style: none;
+	background-color: var(--origin-color);
 }
 
-.top-nav a:hover {
-	color: var(--yellow-color);
+nav > ul > li {
+	float: left;
+}
+
+nav ul::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: 30px 20px;
+	text-decoration: none;
+	color: white;
+	width: 100px;
+	font-size: 20px;
+	font-family: var(--font-button-about-us);
+}
+
+nav ul li a:hover {
+	background-color: var(--yellow-color);
+	color: var(--black-color);
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+.logotype__nav {
+	float: right;
+	width: 20%;
+	padding-right: 20px;
 }
 
 /* Logotype TOP */
 
-.top-nav img {
-	width: 15%;
-	display: block;
-	float: right;
-	padding: 15px 40px 15px 0;
+.banner-fkrukh {
+	padding-top: 70px;
 }
 
 .box-fkrukh {
 	background-image: url(/img/img-header.jpeg);
-	margin: 87px 0 10px 0;
 	width: 100%;
 	height: 900px;
 }
@@ -77,7 +100,7 @@
 /* About FC Rukh Lviv */
 
 .container {
-	margin-top: 135px;
+	margin-top: 100px;
 }
 
 .container img {
@@ -250,17 +273,31 @@ footer {
 	line-height: 3rem;
 } 
 
-.footer-nav a {
-	max-width: 500px;
-	margin: 10px auto;
-	line-height: 50px;
-	padding: 40px;
-	font-size: 17px;
-	text-decoration: none;
-	font-family: var(--font-team 400);
-	color: var(--black-color);
+.footer-nav {
+	margin-top: 10px;
 }
 
+.footer-nav a {
+	transition: 0.3s ease; 
+	border-top: 4px solid var(--footer-color);
+   border-bottom: 4px solid var(--footer-color);
+	padding: 10px 0;
+   margin: 0 40px;
+	font-weight: 600;
+	font-family: var(--font-team);
+	font-size: 17px;
+	text-decoration: none;
+	color: var(--black-color);
+	line-height: 50px;
+}
+
+.footer-nav a:hover {
+	border-top: 2px solid #ffffff;
+   border-bottom: 2px solid #ffffff;
+   padding: 5px 0;
+}
+
+ /* Socials */
 .socials {
 	list-style: none;
 	display: flex;
@@ -274,19 +311,28 @@ footer {
 }
 
 .socials a {
-	text-decoration: none;
-	color: var(--black-color);
-	border: 1px solid var(--black-color);
-	border-radius: 20%;
+	color: var(--origin-color);
+  	background: var(--footer-color);
+  	border-radius:4px;
+  	text-align:center;
+  	text-decoration:none; 
+  	display: inline-block;
+  	width:40px;
+  	height:28px;
+  	padding-top:12px;
+  	margin:0 2px;
+  	-o-transition:all .5s;
+  	-webkit-transition: all .5s;
+  	-moz-transition: all .5s;
+  	transition: all .5s;
+}
+
+.socials a:hover {
+	background: var(--white-color);
 }
 
 .socials a i {
-	font-size: 1.1rem;
-	transition: color .4s easy;
-}
-
-.socials a:hover i {
-	color: red;
+	font-size: 20px;
 }
 
 .footer-boottom {
@@ -308,3 +354,5 @@ footer {
 	opacity: .9;
 	font-weight: 200;
 }
+
+
