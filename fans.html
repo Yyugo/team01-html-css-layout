@@ -4,13 +4,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/css/fans.css">
+	<link rel="stylesheet" href="/team01-html-css-layout/css/index.css">
+	<link rel="stylesheet" href="/team01-html-css-layout/fans-css/fans.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/8b2f91c255.js" crossorigin="anonymous"></script>
 	<title>FK Rukh</title>
 </head>
 <body>
-	<nav>
+   <nav>
 		<ul>
-		  <li><a href="index.html">Main</a></li>
+		  <li><a href="/team01-html-css-layout/index.html">Main</a></li>
 		  <li><a href="#">Matches</a>
 			 <ul>
 					<li><a href="#">Calendar of Matches</a></li>
@@ -19,9 +22,96 @@
 			 </ul>
 		  </li>
 		  <li><a href="">News</a></li>
-		  <li><a href="">Fans</a></li>
+		  <li><a href="/team01-html-css-layout/fans.html">Fans</a></li>
 		  <li><a href="">Contact</a></li>
 		  <li><a href="">Admin</a></li>
 		  <img class="logotype__nav" src="img/logotype.svg" alt="Logotype FK Rukh">
 		</ul>
-	</nav>
+	</nav> 
+	<div class="wrapper">
+		<h1>What advantages for my Fan Club?</h1>
+		<div class="contact-club">
+			<div class="contact-img">
+				<img src="/team01-html-css-layout/img/contact-fans.jpg" alt="Fans Contact">
+			</div>
+			<div class="contact-text">
+				<h2>Your <span>permanent contact</span> with the club</h2>
+				<p>You will receive daily support from the club,
+					<br> throughout the season for all your
+					<br> fan activities!</p>
+			</div>		
+		</div>
+		<div class="support-club">
+			<div class="support-text">
+				<h3>Special <span>supporter deals</span>, all year round</h3>
+				<p>There a whole range of advantages for the Supporters, 
+					<br>including the ticket office, the MyParis program,
+					<br> organising your activities and more!</p>
+			</div>
+			<div class="support-img">
+				<img src="/team01-html-css-layout/img/support-fans.jpg" alt="Fans Support">
+			</div>
+		</div>
+		<div class="welcome-club">
+			<div class="welcome-img">
+				<img src="/team01-html-css-layout/img/welcome-fans.jpg" alt="Fans welcome">
+			</div>
+			<div class="welcome-text">
+				<h4><span>Become a part</span> of the club’s international success</h4>
+				<p>Help Paris Saint-Germain continue to grow internationally
+					<br> by giving passionate fans around the world the opportunity 
+					<br> to support Les Rouge et Bleu.</p>
+			</div>
+		</div>
+	</div>
+	<div class="form-contact">
+		<div class="hero">
+			<form>
+				<div class="row">
+					<div class="input-group">
+						<input type="text" id="name" required>
+						<label for="name"><i class="fas fa-user"></i> Your Name</label>
+					</div>
+					<div class="input-group">
+						<input type="text" id="number" required>
+						<label for="number"><i class="fas fa-phone-square-alt"></i> Phone No.</label>
+					</div>
+				</div>
+				<div class="input-group">
+					<input type="email" id="email" required>
+					<label for="email"><i class="fas fa-envelope"></i> Email Id</label>
+				</div>
+				<div class="input-group">
+					<textarea id="message" rows="8" required></textarea>
+					<label for="message"><i class="fas fa-comments"></i> Your Massage</label>
+				</div>
+				<button type="submit"><i class="fas fa-paper-plane"></i>SUBMIT</button>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-content">
+			<h4>FC Rukh</h4>
+			<div class="footer-nav">
+				<a href="index.html">Main</a>
+				<a href="#mathes">Mathces</a>
+				<a href="#news">News</a>
+				<a href="fans.html">Fans</a>
+				<a href="#contacts">Contacts</a>
+				<a href="#admin">Admin</a>
+			</div>
+			<ul class="socials">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-boottom">
+			<p>all rights reserved &copy;2021 created by <span>yura</span></p>
+		</div>
+	</footer>    
+	<script src="js/index.js"></script>
+</body>
+</html>
