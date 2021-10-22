@@ -231,6 +231,16 @@ textarea:valid~label {
 	flex-basis: 250px;
 }
 
+#comments-list {
+	width: 100vw;
+	padding-left: 200px;
+	padding-top: 0px;
+	color: red;
+	padding-bottom: 150px;
+	font-size: 20px;
+	font-family: var(--font-for-contact);
+}
+
 
 @media  screen and (max-width: 767px) {
 	body {

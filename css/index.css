@@ -81,7 +81,7 @@ nav ul li:hover ul {
 
 
 .box-fkrukh {
-	background-image: url(/team01-html-css-layout/img/img-header.jpeg);
+	background-image: url(/img/img-header.jpeg);
 	width: 100%;
 	height: 900px;
 }
@@ -181,7 +181,7 @@ nav ul li:hover ul {
 /* SLIDE WITH THE LAST VICTORY */
 
 .new-slide {
-	background-image:url(/team01-html-css-layout/img/photo-stadium.png);
+	background-image:url(/img/photo-stadium.png);
 	width: 100%;
 	height: 720px;
 	margin-top: 50px;
